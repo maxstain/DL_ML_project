@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7759a233-a941-4bf0-b49f-8a8d6da196a0" name="Changes" comment="First commit">
+    <list default="true" id="7759a233-a941-4bf0-b49f-8a8d6da196a0" name="Changes" comment="DEBUGGING.">
       <change afterPath="$PROJECT_DIR$/images/Ahmed.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functions/camera_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/camera_functions.py" afterDir="false" />
@@ -113,7 +113,7 @@
       <updated>1724681544075</updated>
       <workItem from="1724681545096" duration="3794000" />
       <workItem from="1724685435839" duration="1337000" />
-      <workItem from="1724760234633" duration="2545000" />
+      <workItem from="1724760234633" duration="3234000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />
@@ -123,7 +123,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724686763340</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="DEBUGGING.">
+      <option name="closed" value="true" />
+      <created>1724771917112</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1724771917112</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,9 +140,10 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="DEBUGGING." />
+    <option name="LAST_COMMIT_MESSAGE" value="DEBUGGING." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/DL_ML_project$main.coverage" NAME="main Coverage Results" MODIFIED="1724771010311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DL_ML_project$main.coverage" NAME="main Coverage Results" MODIFIED="1724771765356" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
