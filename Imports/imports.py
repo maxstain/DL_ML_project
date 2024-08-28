@@ -2,25 +2,14 @@ import os
 import shutil
 
 try:
-    import tensorflow as tf
-    import numpy as np
-    import matplotlib.pyplot as plt
     import cv2 as cv
-    from tensorflow import keras
-    from tensorflow.keras import layers
-    from tensorflow.keras.models import Sequential
-    from tensorflow.keras.layers import Dense, Flatten, Conv2D, MaxPooling2D, Dropout
-    from tensorflow.keras.utils import to_categorical
-    from tensorflow.keras.preprocessing.image import ImageDataGenerator
-    from tensorflow.keras.preprocessing import image
-    from tensorflow.keras.applications import VGG16
-    from tensorflow.keras.applications.vgg16 import preprocess_input
-    from tensorflow.keras.models import Model
-    from tensorflow.keras.optimizers import Adam
-    from tensorflow.keras.callbacks import ModelCheckpoint, EarlyStopping
-    from tensorflow.keras.models import load_model
-    from tensorflow.keras.applications.vgg16 import decode_predictions
-    from tensorflow.keras.applications.vgg16 import preprocess_input
+    import os
+    import numpy as np
+    from keras import Sequential
+    from keras.src.applications.mobilenet_v2 import MobileNetV2
+    from keras.src.layers import GlobalAveragePooling2D
+    from keras.src.legacy.preprocessing.image import ImageDataGenerator
+    from keras.src.optimizers import Adam
 except ImportError:
     print("Error: Missing Required Libraries")
     print("Installing Required Libraries from Requirements.txt")

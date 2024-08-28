@@ -5,12 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7759a233-a941-4bf0-b49f-8a8d6da196a0" name="Changes" comment="DEBUGGING.">
-      <change afterPath="$PROJECT_DIR$/images/Firas_Chabchoub.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Organized_images/Ahmed_Belhadj_Amor/Ahmed_Belhadj_Amor.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Organized_images/Firas_Chabchoub/Firas_Chabchoub.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/Person_recognition_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Imports/imports.py" beforeDir="false" afterPath="$PROJECT_DIR$/Imports/imports.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/camera_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/camera_functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Ahmed.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/Ahmed_Belhadj_Amor.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/camera_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/general_functions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/ssd_mobilenet_v2_coco/checkpoint" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/ssd_mobilenet_v2_coco/coco_labels.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/ssd_mobilenet_v2_coco/frozen_inference_graph.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/ssd_mobilenet_v2_coco/model.ckpt.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/ssd_mobilenet_v2_coco/model.ckpt.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/ssd_mobilenet_v2_coco/model.ckpt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/ssd_mobilenet_v2_coco/pipeline.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/ssd_mobilenet_v2_coco/saved_model/saved_model.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/ssd_mobilenet_v2_coco/ssd_mobilenet_v2_coco.pbtxt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +131,7 @@
       <workItem from="1724681545096" duration="3794000" />
       <workItem from="1724685435839" duration="1337000" />
       <workItem from="1724760234633" duration="3267000" />
-      <workItem from="1724839067395" duration="1947000" />
+      <workItem from="1724839067395" duration="5442000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />
@@ -154,7 +165,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724839697793</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="DEBUGGING.">
+      <option name="closed" value="true" />
+      <created>1724841187340</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1724841187341</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,6 +186,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="DEBUGGING." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/DL_ML_project$main.coverage" NAME="main Coverage Results" MODIFIED="1724841013787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DL_ML_project$main.coverage" NAME="main Coverage Results" MODIFIED="1724844723945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

@@ -3,18 +3,35 @@
 # The project is made using Python and TensorFlow.
 # The project is still in progress and will be updated regularly.
 
-from functions.camera_functions import *
+from functions.general_functions import *
+from models.Person_recognition_model import PersonRecognitionModel
 
 
 def main():
-    try:
-        model = load_model(MODEL_PATH, CONFIG_PATH)
-        labels = load_labels(LABELS_PATH)
-        open_camera(model, labels)
-    except Exception as e:
-        print(f"An error occurred: {e}")
+    # Initialize the recognition model
+    recognition_model = PersonRecognitionModel(image_folder, output_folder)
+
+    # Organize images into subfolders
+    recognition_model.organize_images()
+
+    # Create data generators
+    recognition_model.create_data_generators()
+
+    # Build the model
+    recognition_model.build_model()
+
+    # Train the model
+    recognition_model.train_model(epochs=10)
+
+    # Optionally fine-tune the model
+    recognition_model.fine_tune_model(epochs=5)
+
+    # Save the trained model
+    recognition_model.save_model('person_recognition_model.h5')
+
+    recognition_model.process_video()
 
 
 if __name__ == '__main__':
     organize_dataset()
-# main()
+    main()
