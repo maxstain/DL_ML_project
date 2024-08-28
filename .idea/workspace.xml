@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7759a233-a941-4bf0-b49f-8a8d6da196a0" name="Changes" comment="DEBUGGING.">
-      <change afterPath="$PROJECT_DIR$/images/Ahmed.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/camera_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/camera_functions.py" afterDir="false" />
-    </list>
+    <list default="true" id="7759a233-a941-4bf0-b49f-8a8d6da196a0" name="Changes" comment="DEBUGGING." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -113,7 +109,7 @@
       <updated>1724681544075</updated>
       <workItem from="1724681545096" duration="3794000" />
       <workItem from="1724685435839" duration="1337000" />
-      <workItem from="1724760234633" duration="3234000" />
+      <workItem from="1724760234633" duration="3267000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />
@@ -131,7 +127,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724771917112</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="DEBUGGING.">
+      <option name="closed" value="true" />
+      <created>1724771935431</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1724771935431</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
