@@ -5,5 +5,16 @@
 
 from functions.camera_functions import *
 
+
+def main():
+    try:
+        model = load_model(MODEL_PATH, CONFIG_PATH)
+        labels = load_labels(LABELS_PATH)
+        open_camera(model, labels)
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+
 if __name__ == '__main__':
-    open_camera()
+    organize_dataset()
+# main()
