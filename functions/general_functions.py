@@ -26,7 +26,7 @@ def organize_dataset():
     # Create a Pandas DataFrame to store the image paths
     df = pd.DataFrame(image_paths, columns=['image_path'])
 
-    # Split the image paths into folders based on the file name
+    # Split the image paths into folders based on the filename
     df['folder'] = df['image_path'].apply(lambda x: x.split('\\')[-1].split('_')[0])
 
     # Create the output folders based on the unique folder names
