@@ -5,23 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7759a233-a941-4bf0-b49f-8a8d6da196a0" name="Changes" comment="DEBUGGING.">
-      <change afterPath="$PROJECT_DIR$/Organized_images/Ahmed_Belhadj_Amor/Ahmed_Belhadj_Amor.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Organized_images/Firas_Chabchoub/Firas_Chabchoub.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/Person_recognition_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Imports/imports.py" beforeDir="false" afterPath="$PROJECT_DIR$/Imports/imports.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Organized_images/Ahmed_Belhadj_Amor/Ahmed_Belhadj_Amor.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Organized_images/Firas_Chabchoub/Firas_Chabchoub.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/camera_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/general_functions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/ssd_mobilenet_v2_coco/checkpoint" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/ssd_mobilenet_v2_coco/coco_labels.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/ssd_mobilenet_v2_coco/frozen_inference_graph.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/ssd_mobilenet_v2_coco/model.ckpt.data-00000-of-00001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/ssd_mobilenet_v2_coco/model.ckpt.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/ssd_mobilenet_v2_coco/model.ckpt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/ssd_mobilenet_v2_coco/pipeline.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/ssd_mobilenet_v2_coco/saved_model/saved_model.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/ssd_mobilenet_v2_coco/ssd_mobilenet_v2_coco.pbtxt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Person_recognition_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/Person_recognition_model.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,24 +51,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Projects/Python/DL_ML_project&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Projects\Python\DL_ML_project" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Projects\Python\DL_ML_project\images" />
       <recent name="C:\Projects\Python\DL_ML_project\Organized_images" />
@@ -131,7 +125,10 @@
       <workItem from="1724681545096" duration="3794000" />
       <workItem from="1724685435839" duration="1337000" />
       <workItem from="1724760234633" duration="3267000" />
-      <workItem from="1724839067395" duration="5442000" />
+      <workItem from="1724839067395" duration="5731000" />
+      <workItem from="1725023950689" duration="40000" />
+      <workItem from="1725273047979" duration="2228000" />
+      <workItem from="1725282164377" duration="997000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />
@@ -173,7 +170,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724841187341</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="DEBUGGING.">
+      <option name="closed" value="true" />
+      <created>1724845021497</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1724845021497</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,6 +191,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="DEBUGGING." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/DL_ML_project$main.coverage" NAME="main Coverage Results" MODIFIED="1724844723945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DL_ML_project$main.coverage" NAME="main Coverage Results" MODIFIED="1725282795358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

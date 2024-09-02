@@ -12,7 +12,7 @@ def main():
     recognition_model = PersonRecognitionModel(image_folder, output_folder)
 
     # Organize images into subfolders
-    recognition_model.organize_images()
+    organize_dataset()
 
     # Create data generators
     recognition_model.create_data_generators()
@@ -27,11 +27,10 @@ def main():
     recognition_model.fine_tune_model(epochs=5)
 
     # Save the trained model
-    recognition_model.save_model('person_recognition_model.h5')
+    recognition_model.save_model('models/person_recognition_model.keras')
 
     recognition_model.process_video()
 
 
 if __name__ == '__main__':
-    organize_dataset()
     main()
