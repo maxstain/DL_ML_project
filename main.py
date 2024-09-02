@@ -23,12 +23,10 @@ def main():
     # Train the model
     recognition_model.train_model(epochs=10)
 
-    # Optionally fine-tune the model
-    recognition_model.fine_tune_model(epochs=5)
-
     # Save the trained model
     recognition_model.save_model('models/person_recognition_model.keras')
 
+    # Process the video feed
     recognition_model.process_video()
 
 

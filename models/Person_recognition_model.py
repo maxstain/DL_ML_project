@@ -19,26 +19,58 @@ def create_model():
     return model
 
 
+def create_train_generator(image_folder):
+    datagen = ImageDataGenerator(validation_split=0.2)
+    train_generator = datagen.flow_from_directory(
+        image_folder,
+        target_size=(224, 224),
+        batch_size=32,
+        class_mode='binary',
+        subset='training'
+    )
+    return train_generator
+
+
+def create_validation_generator(image_folder):
+    datagen = ImageDataGenerator(validation_split=0.2)
+    validation_generator = datagen.flow_from_directory(
+        image_folder,
+        target_size=(224, 224),
+        batch_size=32,
+        class_mode='binary',
+        subset='validation'
+    )
+    return validation_generator
+
+
 class PersonRecognitionModel:
     def __init__(self, image_folder, output_folder):
         self.image_folder = image_folder
         self.output_folder = output_folder
         self.model = create_model()
-        self.train_generator = None
-        self.validation_generator = None
+        self.train_generator = create_train_generator(image_folder)
+        self.validation_generator = create_validation_generator(image_folder)
+
+    def organize_images(self):
+        # Organize images into subfolders (implementation not shown)
+        pass
 
     def create_data_generators(self):
+        # Debugging information
+        print(f"Image folder: {self.image_folder}")
+        print(f"Contents of image folder: {os.listdir(self.image_folder)}")
+
         datagen = ImageDataGenerator(validation_split=0.2)
         self.train_generator = datagen.flow_from_directory(
             self.image_folder,
-            target_size=(150, 150),
+            target_size=(224, 224),  # Updated input shape
             batch_size=32,
             class_mode='binary',
             subset='training'
         )
         self.validation_generator = datagen.flow_from_directory(
             self.image_folder,
-            target_size=(150, 150),
+            target_size=(224, 224),  # Updated input shape
             batch_size=32,
             class_mode='binary',
             subset='validation'
@@ -52,7 +84,7 @@ class PersonRecognitionModel:
 
     def build_model(self):
         self.model = tf.keras.models.Sequential([
-            tf.keras.layers.Input(shape=(150, 150, 3)),
+            tf.keras.layers.Input(shape=(224, 224, 3)),  # Updated input shape
             tf.keras.layers.Conv2D(32, (3, 3), activation='relu'),
             tf.keras.layers.MaxPooling2D(2, 2),
             tf.keras.layers.Conv2D(64, (3, 3), activation='relu'),
@@ -88,13 +120,40 @@ class PersonRecognitionModel:
             validation_steps=self.validation_generator.samples // self.validation_generator.batch_size
         )
 
-    def fine_tune_model(self, epochs):
-        # Fine-tune the model
-        pass
-
     def save_model(self, model_path):
         self.model.save(model_path)
 
+    def open_video(self):
+        cap = cv.VideoCapture(0)
+        return cap
+
+    # Process the video feed and detect faces in real-time using the trained model with name recognition from
+    # the dataset.
     def process_video(self):
-        # Process video frames (implementation not shown)
-        pass
+        global person_name
+        cap = self.open_video()
+        while True:
+            ret, frame = cap.read()
+            if not ret:
+                break
+
+            faces = detect_faces(frame)
+            for (x, y, w, h) in faces:
+                face = frame[y:y + h, x:x + w]
+                face = cv.resize(face, (224, 224))
+                face = np.expand_dims(face, axis=0)
+                prediction = self.model.predict(face)
+                if prediction > 0.5:
+                    cv.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
+                    person_name = [person for person in os.listdir(self.output_folder) if person != '.jpg'][0]
+                    cv.putText(frame, f'{person_name}', (x, y - 10), cv.FONT_HERSHEY_SIMPLEX, 0.9, (0, 255, 0), 2)
+                else:
+                    cv.rectangle(frame, (x, y), (x + w, y + h), (0, 0, 255), 2)
+                    cv.putText(frame, 'Unknown Person', (x, y - 10), cv.FONT_HERSHEY_SIMPLEX, 0.9, (0, 0, 255), 2)
+
+            cv.imshow('Face detector', frame)
+            if cv.waitKey(1) & 0xFF == ord('q'):
+                break
+
+        cap.release()
+        cv.destroyAllWindows()
