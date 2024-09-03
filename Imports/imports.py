@@ -3,6 +3,8 @@ try:
     import cv2 as cv
     import os
     import shutil
+    import glob
+    import xml.etree.ElementTree as ET
     import numpy as np
     import matplotlib.pyplot as plt
     import matplotlib.image as mpimg

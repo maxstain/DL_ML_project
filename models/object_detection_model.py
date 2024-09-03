@@ -2,14 +2,22 @@
 from functions.general_functions import *
 from Imports.imports import *
 
+
 class ObjectDetectionModel:
-    def __init__(self, model_path, labels_path):
-        self.model_path = model_path
+    def __init__(self, labels_path):
+        self.model_path = create_obj_det_model()
         self.labels_path = labels_path
         self.model = None
         self.labels = None
 
     def load_model(self):
+        if not os.path.exists(self.model_path):
+            raise FileNotFoundError(f"Model path {self.model_path} does not exist.")
+        if not os.path.exists(os.path.join(self.model_path, 'saved_model.pb')):
+            raise FileNotFoundError(f"SavedModel file does not exist at {self.model_path}/saved_model.pb")
+        if not os.path.exists(os.path.join(self.model_path, 'variables')):
+            raise FileNotFoundError(f"Variables folder does not exist at {self.model_path}/variables")
+
         self.model = tf.saved_model.load(self.model_path)
         with open(self.labels_path, 'r') as f:
             self.labels = f.read().strip().split('\n')

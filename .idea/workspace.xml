@@ -4,17 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7759a233-a941-4bf0-b49f-8a8d6da196a0" name="Changes" comment="Added the face recognition.">
-      <change afterPath="$PROJECT_DIR$/Organized_images/image_labels.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/object_detection_model.py" afterDir="false" />
+    <list default="true" id="7759a233-a941-4bf0-b49f-8a8d6da196a0" name="Changes" comment="Adding Object detection.">
+      <change afterPath="$PROJECT_DIR$/models/object_detection_model/ssd_mobilenet_v2_320x320_coco17_tpu-8.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/object_detection_model/variables/variables.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/object_detection_model/variables/variables.index" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Imports/imports.py" beforeDir="false" afterPath="$PROJECT_DIR$/Imports/imports.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Organized_images/image_labels.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Organized_images/image_labels.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functions/general_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/general_functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Ahmed_Belhadj_Amor.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Firas_Chabchoub.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Mohamed_Hedi_Megdiche.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Person_recognition_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/person_recognition_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/frozen_inference_graph.pb" beforeDir="false" afterPath="$PROJECT_DIR$/models/object_detection_model/frozen_inference_graph.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/labels.txt" beforeDir="false" afterPath="$PROJECT_DIR$/models/object_detection_model/labels.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/object_detection_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/object_detection_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/person_recognition_model.keras" beforeDir="false" afterPath="$PROJECT_DIR$/models/person_recognition_model.keras" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,11 +79,11 @@
       <recent name="C:\Projects\Python\DL_ML_project" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projects\Python\DL_ML_project\models\object_detection_model" />
+      <recent name="C:\Projects\Python\DL_ML_project\models" />
       <recent name="C:\Projects\Python\DL_ML_project\images" />
       <recent name="C:\Projects\Python\DL_ML_project\Organized_images" />
       <recent name="C:\Projects\Python\DL_ML_project\images\Firas Chabchoub" />
-      <recent name="C:\Projects\Python\DL_ML_project\images\Ahmed Belhadj Amor" />
-      <recent name="C:\Projects\Python\DL_ML_project\models\ssd_mobilenet_v2_coco" />
     </key>
   </component>
   <component name="RunManager">
@@ -134,7 +134,7 @@
       <workItem from="1725023950689" duration="40000" />
       <workItem from="1725273047979" duration="2228000" />
       <workItem from="1725282164377" duration="5332000" />
-      <workItem from="1725357063301" duration="4061000" />
+      <workItem from="1725357063301" duration="5617000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />
@@ -240,7 +240,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725357370338</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Adding Object detection.">
+      <option name="closed" value="true" />
+      <created>1725369492993</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1725369492993</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,9 +259,10 @@
     <MESSAGE value="First commit" />
     <MESSAGE value="DEBUGGING." />
     <MESSAGE value="Added the face recognition." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the face recognition." />
+    <MESSAGE value="Adding Object detection." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding Object detection." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/DL_ML_project$main.coverage" NAME="main Coverage Results" MODIFIED="1725368905310" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DL_ML_project$main.coverage" NAME="main Coverage Results" MODIFIED="1725370035068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

@@ -48,6 +48,14 @@ def create_model():
     return model
 
 
+def create_obj_det_model():
+    model_path = "models/object_detection_model"
+    if not os.path.exists(model_path):
+        model = tf.saved_model.load('ssd_mobilenet_v2_fpnlite_320x320_coco17_tpu-8/saved_model')
+        tf.saved_model.save(model, model_path)
+    return model_path
+
+
 def create_train_generator(image_folder):
     datagen = ImageDataGenerator(validation_split=0.2)
     train_generator = datagen.flow_from_directory(
@@ -93,3 +101,25 @@ def plot_confusion_matrix(y_true, y_pred):
     plt.xlabel('Predicted')
     plt.ylabel('True')
     plt.show()
+
+
+# Convert XML Annotations to CSV
+def xml_to_csv(xml_folder, csv_path: str):
+    xml_list = []
+    for xml_file in glob.glob(xml_folder + '/*.xml'):
+        tree = ET.parse(xml_file)
+        root = tree.getroot()
+        for member in root.findall('object'):
+            value = (root.find('filename').text,
+                     int(root.find('size')[0].text),
+                     int(root.find('size')[1].text),
+                     member[0].text,
+                     int(member[4][0].text),
+                     int(member[4][1].text),
+                     int(member[4][2].text),
+                     int(member[4][3].text))
+            xml_list.append(value)
+    column_name = ['filename', 'width', 'height', 'class', 'xmin', 'ymin', 'xmax', 'ymax']
+    xml_df = pd.DataFrame(xml_list, columns=column_name)
+    xml_df.to_csv(csv_path, index=None)
+    return xml_df
