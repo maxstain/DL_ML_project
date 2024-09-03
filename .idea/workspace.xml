@@ -5,7 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7759a233-a941-4bf0-b49f-8a8d6da196a0" name="Changes" comment="Added the face recognition.">
+      <change afterPath="$PROJECT_DIR$/Organized_images/image_labels.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/object_detection_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Imports/imports.py" beforeDir="false" afterPath="$PROJECT_DIR$/Imports/imports.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/general_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/general_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Ahmed_Belhadj_Amor.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Firas_Chabchoub.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Mohamed_Hedi_Megdiche.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Person_recognition_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/person_recognition_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/person_recognition_model.keras" beforeDir="false" afterPath="$PROJECT_DIR$/models/person_recognition_model.keras" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,6 +134,7 @@
       <workItem from="1725023950689" duration="40000" />
       <workItem from="1725273047979" duration="2228000" />
       <workItem from="1725282164377" duration="5332000" />
+      <workItem from="1725357063301" duration="4061000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />
@@ -213,7 +224,23 @@
       <option name="project" value="LOCAL" />
       <updated>1725286899234</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added the face recognition.">
+      <option name="closed" value="true" />
+      <created>1725357312257</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1725357312257</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added the face recognition.">
+      <option name="closed" value="true" />
+      <created>1725357370338</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1725357370338</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,6 +254,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Added the face recognition." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/DL_ML_project$main.coverage" NAME="main Coverage Results" MODIFIED="1725286824598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DL_ML_project$main.coverage" NAME="main Coverage Results" MODIFIED="1725368905310" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

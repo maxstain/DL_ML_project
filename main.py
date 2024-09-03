@@ -1,33 +1,40 @@
-# This Script is made by Firas CHABCHOUB
-# It's a Deep learning and Machine learning project that uses live feeds to detect and classify objects in real time.
-# The project is made using Python and TensorFlow.
-# The project is still in progress and will be updated regularly.
-
+# main.py
 from functions.general_functions import *
-from models.Person_recognition_model import PersonRecognitionModel
+from models.person_recognition_model import PersonRecognitionModel
+from models.object_detection_model import ObjectDetectionModel
 
 
 def main():
-    # Initialize the recognition model
-    recognition_model = PersonRecognitionModel(image_folder, output_folder)
+    choice = input("Do you want face recognition or object recognition? (1/2): ")
+    if choice == '1':
+        # Initialize the recognition model
+        recognition_model = PersonRecognitionModel(image_folder, output_folder)
 
-    # Organize images into subfolders
-    organize_dataset()
+        # Create data generators
+        recognition_model.create_data_generators()
 
-    # Create data generators
-    recognition_model.create_data_generators()
+        # Build the model
+        recognition_model.build_model()
 
-    # Build the model
-    recognition_model.build_model()
+        # Train the model
+        recognition_model.train_model(epochs=10)
 
-    # Train the model
-    recognition_model.train_model(epochs=10)
+        # Save the trained model
+        recognition_model.save_model('models/person_recognition_model.keras')
 
-    # Save the trained model
-    recognition_model.save_model('models/person_recognition_model.keras')
+        # Process the video feed
+        recognition_model.process_video()
+    elif choice == '2':
+        # Initialize the object detection model
+        object_detection_model = ObjectDetectionModel(object_detection_model_path, object_detection_labels_path)
 
-    # Process the video feed
-    recognition_model.process_video()
+        # Load the model
+        object_detection_model.load_model()
+
+        # Process the video feed
+        object_detection_model.process_video()
+    else:
+        print("Invalid choice. Please enter 1 or 2.")
 
 
 if __name__ == '__main__':
