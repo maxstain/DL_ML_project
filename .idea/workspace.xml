@@ -9,6 +9,7 @@
       <change afterPath="$PROJECT_DIR$/models/object_detection_model/variables/variables.data-00000-of-00001" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/models/object_detection_model/variables/variables.index" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Imports/imports.py" beforeDir="false" afterPath="$PROJECT_DIR$/Imports/imports.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Organized_images/image_labels.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Organized_images/image_labels.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functions/general_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/general_functions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
@@ -134,7 +135,7 @@
       <workItem from="1725023950689" duration="40000" />
       <workItem from="1725273047979" duration="2228000" />
       <workItem from="1725282164377" duration="5332000" />
-      <workItem from="1725357063301" duration="5617000" />
+      <workItem from="1725357063301" duration="5965000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />
@@ -248,7 +249,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725369492993</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Adding Object detection.">
+      <option name="closed" value="true" />
+      <created>1725370854839</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1725370854839</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
